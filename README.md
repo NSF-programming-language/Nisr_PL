@@ -45,3 +45,23 @@ We're building a next-generation programming language designed to redefine softw
 - [Object Oriented Programming](10-Object%20Oriented%20Programming.md)
 - [Language Configuration](11-Language%20Configuration.md)
 
+
+## 🛠️ Feedback & Support
+
+<p align="center">
+  <a href="https://forms.gle/kjmtNFNrPeScw4ox5">
+    <img src="https://img.shields.io/badge/💬 Give Feedback-blue?style=for-the-badge" />
+  </a>
+  <a href="https://forms.gle/kjmtNFNrPeScw4ox5">
+    <img src="https://img.shields.io/badge/🐞 Report Bug-red?style=for-the-badge" />
+  </a>
+  <a href="https://forms.gle/kjmtNFNrPeScw4ox5">
+    <img src="https://img.shields.io/badge/💡 Suggestions-yellow?style=for-the-badge" />
+  </a>
+  <a href="mailto:nisrprogramminglanguage@gmail.com">
+    <img src="https://img.shields.io/badge/✉️ Email Us-green?style=for-the-badge" />
+  </a>
+  <a href="https://t.me/Nisr_PL">
+    <img src="https://img.shields.io/badge/📱 Telegram-blue?style=for-the-badge" />
+  </a>
+</p>
