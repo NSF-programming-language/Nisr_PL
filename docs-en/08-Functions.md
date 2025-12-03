@@ -1,6 +1,7 @@
+<p align="center">
+  <img src="/assets/animated_header.svg" alt="NISR Logo" width="1000" />
+</p>
 
----
-# 🦅**NISR PROGRAMMING LANGUAGE**
 ---
 
 # 📝 Functions in NISR
