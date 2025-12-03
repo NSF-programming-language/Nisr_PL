@@ -1,6 +1,6 @@
 ---
 
-## 📝**Functions in NISR**
+## 📝Functions in NISR
 
 **Functions** are fundamental building blocks in **NISR**, enabling you to **encapsulate logic**, organize your code, and promote **reuse**.
 
