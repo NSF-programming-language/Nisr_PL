@@ -25,12 +25,12 @@
 
   <g filter="url(#glow)">
     <!-- Brand Name -->
-    <text x="50%" y="50" font-size="36" text-anchor="middle" font-family="Orbitron, sans-serif" fill="url(#g1)" letter-spacing="2">
+    <text x="50%" y="50" font-size="56" text-anchor="middle" font-family="Orbitron, sans-serif" fill="url(#g1)" letter-spacing="2">
       Nisr Programming Language
     </text>
 
     <!-- Slogan / Tagline -->
-    <text x="50%" y="95" font-size="18" text-anchor="middle" fill="#FFFFFF" font-family="Courier New, monospace" opacity="0.9">
+    <text x="50%" y="95" font-size="24" text-anchor="middle" fill="#FFFFFF" font-family="Courier New, monospace" opacity="0.9">
       <tspan fill="#FFC72C">NISR</tspan> — Code in Your <tspan fill="#FFC72C">Own</tspan> Language
     </text>
 
