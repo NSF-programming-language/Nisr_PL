@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://example.com/playground">
+  <a href="https://Github.com/Nisr-programming-language/Nisr_PL">
     <img src="https://img.shields.io/badge/Try%20NISR-Online-green?style=for-the-badge" />
   </a>
 </p>
