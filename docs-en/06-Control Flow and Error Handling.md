@@ -1,30 +1,31 @@
-## **🔁 Control Statements and Loops in NISR**
+## 🔁 Control Statements and Loops in NISR
 
 This chapter covers the essential **control flow** structures in **NISR**, allowing your programs to make decisions and repeat actions.
 
-**1. ✅ Control Statements**
+---
+
+## 1. ✅ Control Statements
 
 **Control statements** allow your program to execute specific blocks of code based on conditions.
 
 NISR uses a clean syntax where:
 
-• Conditions are written without parentheses.
+- Conditions are written without parentheses.
+- The code block is enclosed in curly braces `{ }`.
 
-• The code block is enclosed in curly braces \{\} .
+---
 
-**1.1 💡 if Statement**
+### 1.1 💡 if Statement
 
 The `if` statement runs a block of code only when its condition evaluates to `true`.
 
 **Syntax**
+```nisr
+if condition {
+    # code to run if condition is true
+}
 ```
-if condition \{
-
-    \# code to run if condition is true
-
-\}
-```
-**Example: **
+Example
 
 ```
 age = 18
@@ -35,57 +36,48 @@ if age >= 18 {
 ; Output: Adult
 ```
 
-**1.2 ⚖ if...else Statement**
+## 1.2 ⚖ if...else Statement
 
-This statement runs one block when the condition is `true` , and a different block when the condition is `false`.
+This statement runs one block when the condition is `true`, and a different block when the condition is `false`.
 
-**Syntax**
+Syntax
 ```
-if condition \{
+if condition {
+    # true block
+} else {
+    # false block
+}
 
-    \# true block
-
-\} else \{
-
-    \# false block
-
-\}
 ```
-**Example: **
-
+Example
 ```
 age = 15
 if age >= 18 {
     Print("Adult")
 } else {
-      Print("Child")
+    Print("Child")
 }
 
 ; Output: Child
+
 ```
+## 1.3 🚦 if...elseif...else Statement
 
-**1.3**🚦 if...elseif...else **Statement**
+Used to check multiple conditions sequentially. Once a condition is `true`, the corresponding block executes and the rest are skipped.
 
-Used to check multiple conditions sequentialy. Once a condition is `true` , the corresponding block is executed, and the rest are skipped.
+Syntax
 
-**Syntax**
 ```
-if condition1 \{
+if condition1 {
+    # code for condition1
+} elseif condition2 {
+    # code for condition2
+} else {
+    # code if none of the above are true
+}
 
-    \# code for condition1
-
-\} elseif condition2 \{
-
-    \# code for condition2
-
-\} else \{
-
-    \# code if none of the above are true
-
-\}
 ```
-**Example: **
-
+Example
 ```
 age = 18
 if age > 18 {
@@ -99,146 +91,140 @@ if age > 18 {
 ; Output: Teenager
 ```
 
-**1.4 **🧱** Nested Control Statements**
+## 1.4 🧱 Nested Control Statements
 
-You can place **control statements** inside one another to check dependent conditions.
+You can place control statements inside one another to check dependent conditions.
 
-**Example**
-
+Example
 ```
 age = 24
 has_ticket = true
+
 if age > 18 {
     if has_ticket {
-       Print("Allowed entry")
+        Print("Allowed entry")
     } else {
-         Print("Need ticket to enter")
-     }
+        Print("Need ticket to enter")
+    }
 } else {
-Print("Too young to enter")
+    Print("Too young to enter")
 }
 
 ; Output: Allowed entry
 ```
 
-## **2. **🔄** Loops and Iteration**
+## 2. 🔄 Loops and Iteration
 
 **Loops** are used to repeat a block of code multiple times.
 
-## **2.1🌀 for Loop**
+## 2.1 🌀 for Loop
 
-The `for` loop is used to iterate over sequences **\(like lists or strings\)** or **ranges of numbers**.
+The `for` loop is used to iterate over sequences (lists, strings) or ranges of numbers.
 
-🔢**The** range\(\) **function**
+## 🔢 The range() function
 
-The **range\(\)** function generates a sequence of numbers used for iteration. It has **three** forms:
+The range() function generates a sequence of numbers used for iteration.
+It has three forms:
 
-• **range\(stop\)** : **Starts at** `0`, **ends at** stop `- 1` .
+- range(stop) – starts at 0, ends at stop - 1
 
-• **range\(start, stop\)** : **Starts at** start , **ends at** stop `- 1`.
+- range(start, stop) – starts at start, ends at stop - 1
 
-• **range\(start, stop, step\)** : **step** controls the **increment** or **decrement**.
+- range(start, stop, step) – step controls increment/decrement (cannot be 0)
 
-**Note:** The **stop** value is always excluded from the sequence. The **step** value cannot be `0` .
+**Note**: The stop value is excluded.
 
-**Examples of** range\(\): 
-
-1.  **range\(stop\)**
-
+Examples of `range()`:
+1. `range(stop)`
 ```
-        for a in range(3) {
-            Print(a)
-        }
+for a in range(3) {
+    Print(a)
+}
 
 ; Output: 0, 1, 2
 ```
-
-2. **range\(start, stop\)**
-
+2. `range(start, stop)`
 ```
 for i in range(2, 4) {
-    Print\(i)
+    Print(i)
 }
 
 ; Output: 2, 3
 ```
+## 🛑 The break Statement
 
-🛑**The break Statement**
+`break` immediately stops the loop.
 
-The `break` statement immediately **stops** the execution of the loop it is inside.
-
-**Example:** `break` in a **for** loop: 
-
+Example
 ```
 for a in range(5) {
     if a == 3 {
-       break
-       }
+        break
+    }
     Print(a)
 }
 
 ; Output: 0, 1, 2
 ```
 
-## ⏭ **The Continue Statement**
+## ⏭ The continue Statement
 
-The `continue` statement stops the current iteration of the loop and moves the control to the next iteration.
+`continue` skips the current iteration and moves to the next.
 
-**Example:** `continue` in a **for** loop.
+Example
 
 ```
 for a in range(5) {
     if a == 3 {
-      continue
-      }
-      Print(a)
+        continue
+    }
+    Print(a)
 }
 
-; Output: 0, 1, 2, 4 (3 is skipped)
+; Output: 0, 1, 2, 4
 ```
 
-**2.2⏳ while Loop**
+## 2.2 ⏳ while Loop
 
-A **while** loop repeats a block of code as long as its condition remains `true`.
+A `while` loop runs as long as its condition is `true`.
 
-**Syntax: **
+Syntax
 
 ```
-while condition \{
-
-    \# code to repeat
-
-\}
+while condition {
+    # code to repeat
+}
 ```
 
-**Example: **
+Example
 
 ```
 count = 1
 while count <= 3 {
-      Print(count)
-      count = count + 1 ; This ensures the loop terminates
+    Print(count)
+    count = count + 1   ; This ensures the loop terminates
 }
 
 ; Output: 1, 2, 3
+
 ```
 
-**Caution:** Ensure that the loop condition eventualy becomes `false` . An unchanging condition will result in an **infinite loop**.
+**⚠ Caution**: If the condition never becomes `false`, the loop becomes infinite.
 
-## **🛑/⏭ break and continue in while Loops**
+## 🛑 / ⏭ break and continue in while Loops
 
-The `break` and `continue` statements function the same way in **while** loops as they do in **for** loops.
+They function exactly the same as in `for` loops.
 
-**Example:** `break` in a **while** loop
+Example (break)
 
 ```
 i = 1
 while i <= 5 {
-      if i == 4 {
-         break
-       }
-      Print(i)
-      i = i + 1
+    if i == 4 {
+        break
+    }
+    Print(i)
+    i = i + 1
 }
 
 ; Output: 1, 2, 3
