@@ -2,6 +2,11 @@
   <img src="/assets/animated_header.svg" alt="NISR Logo" width="1000" />
 </p>
 
+<p align="center">
+  <a href="https://Github.com/Nisr-programming-language/Nisr_PL">
+    <img src="https://img.shields.io/badge/Try%20NISR-Online-green?style=for-the-badge" />
+  </a>
+</p>
 ---
 
 
