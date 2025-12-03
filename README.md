@@ -12,9 +12,6 @@
 
 
 
-
-
-
 ---
 # 🦅**NISR PROGRAMMING LANGUAGE**
 ---
