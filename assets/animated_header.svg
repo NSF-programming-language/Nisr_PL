@@ -30,7 +30,7 @@
     </text>
 
     <!-- Slogan / Tagline -->
-    <text x="50%" y="95" font-size="24" text-anchor="middle" fill="#FFFFFF" font-family="Courier New, monospace" opacity="0.9">
+    <text x="50%" y="95" font-size="30" text-anchor="middle" fill="#FFFFFF" font-family="Courier New, monospace" opacity="0.9">
       <tspan fill="#FFC72C">NISR</tspan> — Code in Your <tspan fill="#FFC72C">Own</tspan> Language
     </text>
 
