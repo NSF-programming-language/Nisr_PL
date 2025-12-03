@@ -2,6 +2,16 @@
   <img src="assets/animated_header.svg" alt="NISR Logo" width="1000" />
 </p>
 
+<p align="center">
+  <a href="https://example.com/playground">
+    <img src="https://img.shields.io/badge/Try%20NISR-Online-green?style=for-the-badge" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🚀 Performance-High-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/🌐 Multilingual-Supported-informational?style=for-the-badge" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/🦅%20NISR%20PL-Language-blue?style=for-the-badge" />
@@ -19,6 +29,7 @@
 We're building a next-generation programming language designed to redefine software development. This language combines the performance and robustness with the simplicity and readability and adds something new: **native multilingual support for developers around the world.**
 
 ---
+
 
 # Documentation
 
