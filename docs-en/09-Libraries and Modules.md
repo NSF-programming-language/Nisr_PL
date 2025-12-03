@@ -1,5 +1,7 @@
----
-# 🦅**NISR PROGRAMMING LANGUAGE**
+<p align="center">
+  <img src="/assets/animated_header.svg" alt="NISR Logo" width="1000" />
+</p>
+
 ---
 
 # 📚 NISR Library System
