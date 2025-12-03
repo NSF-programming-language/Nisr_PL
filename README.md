@@ -16,10 +16,6 @@
 </p>
 
 
-
----
-# 🦅**NISR PROGRAMMING LANGUAGE**
----
 We're building a next-generation programming language designed to redefine software development. This language combines the performance and robustness with the simplicity and readability and adds something new: **native multilingual support for developers around the world.**
 
 ---
