@@ -1,7 +1,7 @@
 # NISR Built-In Functions
 
 These are my personal notes on the built-in functions available in
-**NISR**. I wrote them to keep track of how the most common functions
+**NISR**. We wrote them to keep track of how the most common functions
 behave, especially for console input/output, checking lengths, and
 converting values between different data types.
 
