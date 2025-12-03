@@ -67,9 +67,6 @@ nsrint main.nb
 
 ---
 
-
-## 🛠️ Feedback & Support
-
 <p align="center">
   <a href="https://forms.gle/kjmtNFNrPeScw4ox5">
     <img src="https://img.shields.io/badge/💬 Give Feedback-blue?style=for-the-badge" />
@@ -88,3 +85,4 @@ nsrint main.nb
   </a>
 </p>
 
+---
