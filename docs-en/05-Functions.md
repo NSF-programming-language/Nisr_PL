@@ -1,4 +1,3 @@
----
 
 ## 📝Functions in NISR
 
