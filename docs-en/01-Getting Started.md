@@ -1,6 +1,6 @@
-# 🦅NISR Programming Language Documentation
-
-**Empowering the World to Code in Their Own Language**
+<p align="center">
+  <img src="/assets/animated_header.svg" alt="NISR Programming language" width="1000" />
+</p>
 
 ---
 
