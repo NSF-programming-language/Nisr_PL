@@ -1,4 +1,225 @@
 
+## 🧾**Lists and Tuples in Nisr**
+
+**Lists and tuples** are two fundamental collection types in **Nisr**.
+
+Both allow storing **multiple values**, but they behave differently:
+
+● **Lists** → changeable, dynamic \(mutable\)
+
+● **Tuples** → fixed, unchangeable \(immutable\)
+
+## **1. Lists in Nisr**
+
+A **list** is an ordered, **mutable \(changeable\)** collection of items. **Lists** use square brackets `\[\]`.
+
+`Lists` can store any data type, including **mixed types** \(`integers`, `strings`, `booleans`, `floats`, `even other lists` or `tuples`\).
+
+## **1.1 Creating Lists**
+
+Examples:
+
+```
+numbers = [1, 2, 3, 4]
+names = ["Aman", "Liya", "Sara"]
+mixed = [21, "Hello", true, 5.9]
+```
+
+**1.2 Nested Lists**
+
+A **list** can contain **another list**, creating complex structures:
+
+```
+nested = [
+[1, 2, 3],
+["a", "b"],
+[true, false]
+]
+
+Print (nested[0]) ; [1, 2, 3]
+Print (nested[1][1]) ; b
+```
+
+## **1.3 Accessing List Elements \(Indexing\)**
+
+● Lists use **0-based indexing**.
+
+● The first element is at index 0.
+
+● You access elements using `\[index\]`.
+
+Example:
+
+```
+fruits = ["apple", "banana", "orange"]
+
+Print (fruits[0]) ; apple
+Print (fruits[2]) ; orange
+```
+
+## **1.4 Updating List Items**
+
+Since **lists** are mutable, you can modify elements after creation:
+
+```
+fruits = ["apple", "banana", "orange"]
+Print (fruits[0]) ; apple
+
+fruits[0] = "grape" ; Update first element
+Print (fruits[0]) ; grape
+```
+
+## **1.5 Adding Items \(append\)**
+
+Use the **append\(\)** method to add an item to the **end** of the list.
+
+```
+numbers = [1, 2]
+numbers.append(3)
+
+Print(numbers) ; [1, 2, 3]
+```
+
+## **1.6 Inserting Items \(insert\)**
+
+Use the **insert\(index, item\)** method to add an item at a **specific index**.
+
+```
+fruits = ["banana", "orange"]
+fruits.insert(0, "apple")
+
+Print (fruits) ; ["apple", "banana", "orange"]
+```
+
+**1.7 Removing Items \(remove\)**
+
+Use the **remove\(item\)** method to delete the first occurrence of a specific value.
+
+```
+colors = ["red", "green", "blue"]
+colors.remove("green")
+
+Print (colors) ; ["red", "blue"]
+```
+
+## **1.8 Slicing Lists**
+
+**Slicing** is used to get a subset \(part\) of a list.
+
+**Syntax: list\[start:end\]**
+
+● The **start** index is included.
+
+● The **end** index is **excluded**.
+
+Example:
+
+```
+data = [10, 20, 30, 40, 50]
+subset = data[1:4] ; From index 1 (20) up to (but not including) index 4 (50)
+
+Print (subset) ; [20, 30, 40]
+```
+
+## **2. Tuples in Nisr**
+
+A **tuple** is an **ordered**, **immutable \(unchangeable\)** collection of items. **Tuples** use parentheses `\(\)`.
+
+They are often used for fixed data structures where the content should not change.
+
+## **2.1 Creating Tuples**
+
+**Example:**
+
+```
+coordinates = (10, 20)
+months = ("Jan", "Feb", "Mar")
+```
+
+Tuple with **one** item:
+
+If you have only one item, you must include a comma `\(,\)` after the item.
+
+```
+single_item = (100,) ; This is a tuple
+not_a_tuple = (100) ; This is just an integer!
+
+Print (typeof(single_item)) ; tuple
+Print (typeof(not_a_tuple)) ; int
+```
+
+## **2.2 Nested Tuples**
+
+**Tuples** can contain other **tuples** or **lists**:
+
+```
+nested_tuple = (
+(1, 2),
+(3, 4, 5),
+("a", "b")
+)
+
+Print (nested_tuple[1]) ; (3, 4, 5)
+Print (nested_tuple[2][0]) ; "a"
+combo = (1, [10, 20], "X")
+Print (combo[1][0]) ; 10
+```
+
+## **2.3 Accessing Tuple Items**
+
+**Tuples** use the same **0-based indexing** as lists:
+
+**Example: **
+```
+colors = ("red", "green", "blue")
+
+Print (colors[0]) ; red
+```
+
+## **2.4 Tuple Concatenation**
+
+**Tuples** can be combined using `\+`, which creates a **new tuple** \(since the originals cannot change\).
+
+**Example: **
+
+```
+t1 = (1, 2)
+t2 = (3, 4)
+
+Print(t1 + t2) ; (1, 2, 3, 4)
+```
+
+## **2.5 Tuple Methods**
+
+**Tuples** have fewer methods because they are immutable. **Nisr** supports:
+
+1. **count\(value\)**: Returns the number of times a specified value occurs in a tuple.
+
+2. **len\(tuple\)**: Returns the number of items in the tuple.
+
+Example:
+
+```
+t = (1, 2, 2, 3)
+Print(t.count(2)) ; 2
+
+t2 = (10, 20, 30)
+Print (len(t2)) ; 3
+```
+
+## **2.6 Returning a tuple in a function** 
+
+**Tuples** are often used to return multiple values from a function:
+
+```
+fun get_range() {
+return (1, 10)
+}
+
+Print (get_range()) ; (1, 10)
+```
+
+
 🗃**NISR Dictionary Manipulation**
 
 Dictionaries in NISR are collections that store data in **key-value pairs**. They are highly effective for fast lookups, organization, and modification of related information.
