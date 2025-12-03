@@ -1,47 +1,53 @@
 ## ➕ Operators and Expressions
 
-**Operators** in **NISR** allow you to perform **calculations**, **compare values**, **combine conditions**, and **manipulate data**. This chapter introduces all major operator categories with simple examples.
+**Operators** in **NISR** allow you to perform **calculations**, **compare values**, **combine conditions**, and **manipulate data**.  
+This chapter introduces all major operator categories with simple and clear examples.
+
+---
 
 ## 1. ➗ Arithmetic Operators
 
 **Arithmetic operators** are used for standard mathematical operations on **Number** types.
 
 - **+ (Addition):** Combines two numbers.  
-  > Example: 10 + 5 results in 15.
+  > Example: `10 + 5` results in **15**
 
 - **- (Subtraction):** Finds the difference between two numbers.  
-  > Example: 80 - 10 results in 70.
+  > Example: `80 - 10` results in **70**
 
 - **\* (Multiplication):** Multiplies two numbers.  
-  > Example: 10 * 80 results in 800.
+  > Example: `10 * 80` results in **800**
 
 - **/ (Division):** Divides two numbers.  
-  > Example: 80 / 80 results in 1.
+  > Example: `80 / 80` results in **1**
 
-- **% (Modulus/Remainder):** Returns the remainder of a division.  
-  > Example: 82 % 10 results in 2.
+- **% (Modulus):** Returns remainder of a division.  
+  > Example: `82 % 10` results in **2**
 
-- **\*\* (Exponentiation):** Raises the left operand to the power of the right operand.  
-  > Example: 10 ** 2 results in 100.
+- **\*\* (Exponentiation):** Raises a number to a power.  
+  > Example: `10 ** 2` results in **100**
 
 ---
 
-## String, List and Tuple Arithmetic
+## 📚 String, List, and Tuple Arithmetic
 
-**NISR** extends the `+` and `*` operators to collection types:
+NISR extends the `+` and `*` operators to work with **strings, lists, and tuples**.
 
-- **Concatenation (+):** Combines two `strings`, `lists`, or `tuples`.
-- **Repetition (\*):** Repeats a `string`, `list`, or `tuple` a specified number of times.
+### ✔ Concatenation (`+`)
+Combines two `strings`, `lists`, or `tuples`.
 
-```
+### ✔ Repetition (`*`)
+Repeats a `string`, `list`, or `tuple`.
+
+```nisr
 str1 = "hello"
 str2 = ", world"
 
-str3 = str1 + str2 ; Concatenation
-Print(str3) ; Output: hello, world
+str3 = str1 + str2   ; Concatenation
+Print(str3)          ; Output: hello, world
 
-str4 = str1 * 3 ; Repetition
-Print(str4) ; Output: hellohellohello
+str4 = str1 * 3      ; Repetition
+Print(str4)          ; Output: hellohellohello
 
 list1 = [1, 2, 3]
 list2 = [4, 5]
@@ -54,29 +60,34 @@ tuple2 = (3, 4)
 Print(tuple1 + tuple2) ; Output: (1, 2, 3, 4)
 ```
 
----
-
 ## 2. ⚖ Comparison Operators
 
-**Comparison operators** compare two values and return a **Boolean** result: `true` or `false`.
+**Comparison operators** compare two values and return a Boolean result (`true` or `false`).
 
-- **==:** Checks if two operands are equal.  
-  > Example: 3 == 3
+- == — Equal
 
-- **!=:** Checks if two operands are not equal.  
-  > Example: 2 != 1
+  Example: `3 == 3`
 
-- **> :** Checks if the left operand is greater than the right operand.  
-  > Example: 5 > 2
+- != — Not Equal
 
-- **>=:** Checks if the left operand is greater than or equal to the right operand.  
-  > Example: 5 >= 2
+  Example: `2 != 1`
 
-- **< :** Checks if the left operand is less than the right operand.  
-  > Example: 1 < 5
+- > — Greater Than
 
-- **<=:** Checks if the left operand is less than or equal to the right operand.  
-  > Example: 1 <= 5
+  Example: `5 > 2`
+
+- >= — Greater Than or Equal
+
+  Example: `5 >= 2`
+
+- < — `Less Than`
+
+  Example: `1 < 5`
+
+- <= — Less Than or Equal
+
+  Example: `1 <= 5`
+
 
 ```
 a = 10
@@ -86,136 +97,152 @@ Print(a == b) ; Output: false
 Print(a > b)  ; Output: true
 ```
 
----
-
 ## 3. 🔁 Assignment Operators
 
-**Assignment operators** are used to assign values to variables.
+**Assignment** operators assign values to variables.
 
-- **= (Assignment):** `x = 5` assigns the value on the right to the variable on the left.
-- **+= (Add and Assign):** `x += 3` → `x = x + 3`
-- **-= (Subtract and Assign):** `x -= 3` → `x = x - 3`
-- **\*= (Multiply and Assign):** `x *= 3` → `x = x * 3`
-- **/= (Divide and Assign):** `x /= 3` → `x = x / 3`
-- **%= (Modulus and Assign):** `x %= 3` → `x = x % 3`
-- **\*\*= (Exponentiate and Assign):** `x **= 2` → `x = x ** 2`
+- = — Basic assignment
+
+- += — Add and assign
+
+- -= — Subtract and assign
+
+- *= — Multiply and assign
+
+- /= — Divide and assign
+
+- %= — Modulus and assign
+
+- **= — Exponentiate and assign
 
 ```
 x = 10
 x += 5
-Print(x) ; x is now 15
+Print(x) ; Output: 15
 
 y = 2
 y **= 3
-Print(y) ; y is now 8 (2*2*2)
-```
+Print(y) ; Output: 8    ; (2*2*2)
 
----
+```
 
 ## 4. 🔐 Logical Operators
 
-Logical operators are used to combine **conditional statements** and return a **Boolean** result.
+**Logical operators** combine conditional expressions.
 
-- **&& (Logical AND):** True only if **both** operands are true.
-- **|| (Logical OR):** True if **at least one** operand is true.
-- **! (Logical NOT):** Inverts the Boolean value.
+- && — Logical AND (true only if both are true)
 
-### NISR Truthiness (Non-Boolean Logic)
+- || — Logical OR (true if at least one is true)
 
-**NISR** evaluates "truthiness" of non-Boolean values:
+- ! — Logical NOT (inverts Boolean value)
 
-- `&&` returns the **last truthy value**.
-- `||` returns the **first truthy value**.
-- `!` returns `true` for **empty lists**.
+✔ NISR Truthiness Rules
 
-> Example: Logical NOT on a list  
+Non-Boolean values behave as follows:
+
+- && returns the last truthy value
+
+- || returns the first truthy value
+
+- ! returns true for empty lists
+
 ```
 x = []
-Print(!x) ; Output: true (because the list is empty)
+Print(!x) ; Output: true   ; empty list = false → inverted = true
 ```
 
----
+## 5. ⚙ Bitwise Operators
 
-# 5. ⚙ Bitwise Operators
+**Bitwise operators** work on the binary representation of integers.
 
-Bitwise operators perform operations on the individual **binary bits** of integers.
+- & — AND
 
-- **& (AND):** 1 if both bits are 1.  
-  > Example: 3 & 2 results in 2.
+  Example: `3 & 2` → 2
 
-- **| (OR):** 1 if at least one bit is 1.  
-  > Example: 3 | 2 results in 3.
+- | — OR
 
-- **^ (XOR):** 1 only when bits differ.  
-  > Example: 3 ^ 2 results in 1.
+  Example: `3 | 2` → 3
 
-- **~ (NOT):** Inverts all bits (`~x = -(x + 1)`).  
-  > Example: ~2 results in -3.
+- ^ — XOR
 
-- **<< (Left Shift):** Multiplies by 2 per shift.  
-  > Example: 3 << 1 results in 6.
+  Example: `3 ^ 2` → 1
 
-- **>> (Right Shift):** Divides by 2 per shift (positive numbers).  
-  > Example: 6 >> 1 results in 3.
+- — NOT
 
----
+  Formula: `~x = -(x + 1)`
+  Example: `~2` → -3
 
-### Bitwise Examples
+- << — Left Shift (multiply by 2 each shift)
 
-**a) Bitwise AND (&)**  
+  Example: `3 << 1` → 6
+
+- >> — Right Shift (divide by 2 each shift)
+
+  Example: `6 >> 1` → 3
+
+## 🔧 Bitwise Examples
+
+Bitwise AND (&)
+
 ```
-var1 = 3 ; 0011
-var2 = 2 ; 0010
+var1 = 3   ; 0011
+var2 = 2   ; 0010
 
 result = var1 & var2
 Print(result) ; Output: 2
 ```
 
-**b) Bitwise OR (|)**  
+Bitwise OR (|)
+
 ```
-var1 = 3 ; 0011
-var2 = 2 ; 0010
+var1 = 3
+var2 = 2
 
 result = var1 | var2
 Print(result) ; Output: 3
 ```
 
-**c) Bitwise XOR (^)**  
+Bitwise XOR (^)
+
 ```
-var1 = 3 ; 0011
-var2 = 2 ; 0010
+var1 = 3
+var2 = 2
 
 result = var1 ^ var2
 Print(result) ; Output: 1
 ```
 
-**Bitwise Negation (~)**  
+Bitwise NOT (~)
+
 ```
-var1 = 2 ; 0010
+var1 = 2
 
 result = ~var1
 Print(result) ; Output: -3
 ```
+Left Shift (<<)
 
-**Left Shift (<<)**  
 ```
-var1 = 3 ; 0011
+var1 = 3
 
 result = var1 << 1
 Print(result) ; Output: 6
 ```
 
-**Right Shift (>>)**  
+Right Shift (>>)
+
 ```
-var1 = 6 ; 0110
+var1 = 6
 
 result = var1 >> 1
 Print(result) ; Output: 3
 ```
 
+
 ---
 
-### 📘 Learn more:
+
+### 📘Learn more : 
 - [Getting Started](01-Getting%20Started.md)
 - [Basic Syntax](02-Basic%20Syntax.md)
 - [Expressions and Operators](03-Expressions%20and%20Operators.md)
@@ -225,5 +252,7 @@ Print(result) ; Output: 3
 - [Built-in-Functions](07-Built-in-Functions.md)
 - [Functions](08-Functions.md)
 - [Libraries and Modules](09-Libraries%20and%20Modules.md)
-- [Object Oriented Programming](10-Object%20Oriented%20Programming.md)
+- [Obect Oriented Programming](10-Object%20Oriented%20Programming.md)
 - [Language Configuration](11-Language%20Configuration.md)
+
+---
