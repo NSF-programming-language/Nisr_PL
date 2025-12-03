@@ -2,7 +2,147 @@
 # 🦅**NISR PROGRAMMING LANGUAGE**
 ---
 
+# 📚 NISR Library System
 
+Clean, reusable, and modular code with **NISR Libraries**.
+
+---
+
+## • 🔧 What is a NISR Library?
+
+A NISR library is simply a `.ns` file that contains **functions**, **classes**, or **reusable logic** that you can import into other files.  
+Libraries help you write cleaner, reusable, and more maintainable code.
+
+---
+
+## • 📁 Project Structure Example
+
+```
+/main/main.ns
+/lib/test.ns
+```
+
+- `test.ns` → Your library  
+- `main.ns` → Your main program
+
+---
+
+## • ✍️ Writing Code Inside the Library
+
+### ◦ test.ns
+
+```ns
+fun display() {
+    Print("function from library")
+    return true
+}
+
+fun add(x, y) {
+    return x + y
+}
+
+class A {
+
+    fun A(name, age) {
+        this.name = name
+        this.age  = age
+    }
+
+    fun getName() {
+        return this.name
+    }
+
+    fun getAge() {
+        return this.age
+    }
+}
+
+Print("library is running")   // Executes when library loads
+```
+## 📝 Explanation
+
+- **display()** → Prints a message + returns true
+
+- **add(x,y)** → Returns the sum of x and y
+
+- **class A** → Stores name & age with getter methods
+
+- The final **Print()** runs automatically once the library is imported
+
+## • ⚙️ Compiling the Library
+
+Before importing, compile the library:
+```
+nsrcom test.ns -o lib
+```
+
+The compiler produces:
+```
+lib.nb
+```
+
+This file is what NISR loads when importing.
+
+## • 📥 Importing the Library
+
+Inside main.ns:
+```
+import lib
+```
+When imported:
+
+- `lib.nb` loads automatically
+
+- Top-level code (like `Print(...)`) executes
+
+- All functions & classes become available under the `lib` namespace
+
+## • 🚀 Using Library Functions
+◦ **main.ns**
+```
+import lib
+
+Print(lib.display())
+```
+Output
+```
+library is running
+function from library
+true
+```
+## • ➕ Calling Add Function
+```
+import lib
+
+Print(lib.add(1000, 300))
+```
+
+Output
+```
+library is running
+1300
+```
+## • 🏗️ Creating Objects from Library Classes
+```
+import lib
+
+obj = lib.A(name="Nisr", age=20)
+Print(obj.getName(), obj.getAge())
+```
+Output
+```
+library is running
+Nisr 20
+```
+## • ✅ Summary
+
+- Libraries are .ns files
+
+- Must be compiled into .nb files
+
+- Imported using import lib
+
+- Behave like built-in modules with namespace access
 
 
 ---
