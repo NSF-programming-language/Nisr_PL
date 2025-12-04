@@ -33,16 +33,16 @@ Defined using the `class` keyword.
 **Syntax**
 ```nisr
 class ClassName(
-    // attributes and methods
+    ; attributes and methods
 )
 ```
 Object Creation
 ```
 class Person()
-    // Class definition
+    ; Class definition
 
-p = Person()     // Creating an object
-print(p)         // Output: <object Person>
+p = Person()     ; Creating an object
+print(p)         ; Output: <object Person>
 ```
 
 ## 1.2 Constructor (fun ClassName())
@@ -58,7 +58,7 @@ class Person(
 )
 
 p = Person("NISR5.0", 1)
-print(p.name, p.age)      // Output: NISR5.0 1
+print(p.name, p.age)      ; Output: NISR5.0 1
 ```
 
 ⚠️ Incorrect usage produces an argument-size error.
@@ -74,12 +74,12 @@ class Person(
     }
 
     fun greet() {
-        return "Hello, #(this.name)"
+        return "Hello, ;(this.name)"
     }
 )
 
 p = Person("NISR5.0", 1)
-print(p.greet())       // Output: Hello, NISR5.0
+print(p.greet())       ; Output: Hello, NISR5.0
 ```
 
 ## 1.4 Class (Static) Attributes
@@ -94,7 +94,7 @@ class Circle(
     }
 )
 
-print(Circle.PI)     // Output: 3.14159
+print(Circle.PI)     ; Output: 3.14159
 ```
 ## 1.5 Class (Static) Methods
 
@@ -106,7 +106,7 @@ class MathUtil(
     }
 )
 
-print(MathUtil.sum(5, 10))   // Output: 15
+print(MathUtil.sum(5, 10))   ; Output: 15
 ```
 ## 1.6 Private Attributes
 
@@ -123,7 +123,7 @@ class BankAccount(
 )
 
 acc = BankAccount(1000)
-print(acc.getBalance())   // Output: 1000
+print(acc.getBalance())   ; Output: 1000
 ```
 
 ---
@@ -142,7 +142,7 @@ class Animal(
 class Dog(Animal) { }
 
 d = Dog()
-print(d.speak())      // Output: Some sound
+print(d.speak())      ; Output: Some sound
 ```
 
 Method Overriding
@@ -153,7 +153,7 @@ class Dog(Animal) {
     }
 }
 
-print(Dog().speak())      // Output: woof!
+print(Dog().speak())      ; Output: woof!
 ```
 
 ## 2.2 Multiple Inheritance
@@ -175,8 +175,8 @@ class B(
     fun speak() { return "B speaking" }
 )
 
-print(A().speak())    // A speaking
-print(B().speak())    // B speaking
+print(A().speak())    ; A speaking
+print(B().speak())    ; B speaking
 ```
 ## 2.4 Super Function
 
@@ -196,7 +196,7 @@ class Employee(Person) {
 }
 
 e = Employee("Abebe", 101)
-print(e.name, e.id)    // Abebe 101
+print(e.name, e.id)    ; Abebe 101
 ```
 
 
