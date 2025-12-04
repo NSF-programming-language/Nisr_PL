@@ -35,7 +35,7 @@ In **NISR**:
 **General Syntax**
 ```nisr
 fun function_name(parameters) {
-    # Function logic
+    ; Function logic
     return expression ; Optional
 }
 
@@ -174,7 +174,7 @@ fun outer() {
 
 outer() ; Output: Inner function called
 
-# inner() is not accessible here
+; inner() is not accessible here
 ```
 ## 3.3 🔁 Recursion
 
