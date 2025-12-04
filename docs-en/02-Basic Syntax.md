@@ -321,15 +321,10 @@ fun greet(name) {
     print("Hello, " + name)
 }
 ```
-Without `fun`
-```
-greet(name) {
-    print("Hello, " + name)
-}
-```
+
 Omitting Parentheses (no parameters)
 ```
-fun say_hello {
+fun say_hello() {
     print("Hello!")
 }
 ```
