@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Try%20NISR-Online-green?style=for-the-badge" />
   </a>
 </p>
----
+
 
 
 # 📘 NISR — Basic Syntax Reference
