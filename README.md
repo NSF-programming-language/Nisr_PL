@@ -16,7 +16,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/🦅%20NISR%20PL-Language-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Version-0.0.0.4-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Version-0.0.4-orange?style=for-the-badge" />
 </p>
 
 <p align="center">
