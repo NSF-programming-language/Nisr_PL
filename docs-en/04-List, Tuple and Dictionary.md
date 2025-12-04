@@ -263,7 +263,7 @@ dict1 = {
 }
 
 Print(dict1)
-// Output may vary
+; Output may vary
 ```
 
 ## 1.2 Accessing Values
@@ -286,7 +286,7 @@ Print(len(dict1)) ; 3
 dict1["name"] = "Kidan"
 
 Print(dict1)
-// { "name": "Kidan", "age": 30, 10: "nisr5.0" }
+; { "name": "Kidan", "age": 30, 10: "nisr5.0" }
 ```
 
 
@@ -349,17 +349,17 @@ keys()
 dict1 = { "name": "Abe", "age": 30, 10: "nisr5.0" }
 
 Print(dict1.keys())
-// ["name", "age", 10]
+; ["name", "age", 10]
 ```
 values()
 ```
 Print(dict1.values())
-// ["Abe", 30, "nisr5.0"]
+; ["Abe", 30, "nisr5.0"]
 ```
 items()
 ```
 Print(dict1.items())
-// ["name":"Abe", "age":30, 10:"nisr5.0"]
+; ["name":"Abe", "age":30, 10:"nisr5.0"]
 ```
 ## 4.1 has() – Check If Key Exists
 ```
@@ -369,7 +369,7 @@ if dict1.has(555) {
     Print(false)
 }
 
-// false
+; false
 ```
 
 ---
