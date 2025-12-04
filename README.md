@@ -54,7 +54,6 @@ We're building a next-generation programming language designed to redefine softw
 - [Language Configuration](docs-en/11-Language%20Configuration.md)
 
 ---
-docs-en/01-Getting Started.md
 
 <p align="center">
   <a href="https://forms.gle/kjmtNFNrPeScw4ox5">
