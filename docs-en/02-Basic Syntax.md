@@ -59,13 +59,13 @@ isActive = true
 
 Examples
 ```
-; This is a single line comment
+# This is a single line comment
 
-#
+/*
 This is
 a Multiline
 Comment
-#
+*/
 ```
 ## 🖥 4. Printing Output
 
