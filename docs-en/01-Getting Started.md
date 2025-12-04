@@ -52,12 +52,12 @@ Print("Hello World")
 
 ### Compile:
 ```bash
-nsrcom test.ns -o main
+nsrc test.ns -o main
 ```
 
 ### Run:
 ```bash
-nsrint main.nb
+nsri main.nb
 ```
 
 ---
