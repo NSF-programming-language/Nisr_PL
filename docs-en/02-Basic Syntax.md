@@ -53,9 +53,9 @@ isActive = true
 
 **Comments** help you describe your code. They are ignored by the compiler.
 
-- Single-line comment:`;`
+- Single-line comment:`#`
 
-- Multiline comment: `# ... #`
+- Multiline comment: `/* ... */`
 
 Examples
 ```
