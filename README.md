@@ -40,7 +40,7 @@ We're building a next-generation programming language designed to redefine softw
 ---
 
 
-### 📘Learn more : 
+### 📘Documentation : 
 - [Getting Started](docs-en/01-Getting%20Started.md)
 - [Basic Syntax](docs-en/02-Basic%20Syntax.md)
 - [Expressions and Operators](docs-en/03-Expressions%20and%20Operators.md)
