@@ -363,7 +363,7 @@ Print(dict1.items())
 ```
 ## 4.1 has() – Check If Key Exists
 ```
-if dict1.has(555) {
+if has(555) {
     Print(true)
 } else {
     Print(false)
