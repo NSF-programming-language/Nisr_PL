@@ -90,11 +90,11 @@ Print(tuple1 + tuple2) ; Output: (1, 2, 3, 4)
 
   Example: `2 != 1`
 
-- > — Greater Than
+- \> — Greater Than
 
   Example: `5 > 2`
 
-- >= — Greater Than or Equal
+- \>= — Greater Than or Equal
 
   Example: `5 >= 2`
 
@@ -125,22 +125,16 @@ Print(a > b)  ; Output: true
 
 - -= — Subtract and assign
 
-- *= — Multiply and assign
-
 - /= — Divide and assign
-
-- %= — Modulus and assign
-
-- **= — Exponentiate and assign
 
 ```
 x = 10
 x += 5
 Print(x) ; Output: 15
 
-y = 2
-y **= 3
-Print(y) ; Output: 8    ; (2*2*2)
+y = 6
+y -= 3
+Print(y) ; Output: 3  
 
 ```
 
@@ -185,7 +179,7 @@ Print(!x) ; Output: true   ; empty list = false → inverted = true
 
   Example: `3 ^ 2` → 1
 
-- — NOT
+- ~ — NOT
 
   Formula: `~x = -(x + 1)`
   Example: `~2` → -3
@@ -194,7 +188,7 @@ Print(!x) ; Output: true   ; empty list = false → inverted = true
 
   Example: `3 << 1` → 6
 
-- >> — Right Shift (divide by 2 each shift)
+- \>> — Right Shift (divide by 2 each shift)
 
   Example: `6 >> 1` → 3
 
