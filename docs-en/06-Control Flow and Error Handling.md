@@ -40,7 +40,7 @@ The `if` statement runs a block of code only when its condition evaluates to `tr
 **Syntax**
 ```nisr
 if condition {
-    # code to run if condition is true
+    ; code to run if condition is true
 }
 ```
 Example
@@ -61,9 +61,9 @@ This statement runs one block when the condition is `true`, and a different bloc
 Syntax
 ```
 if condition {
-    # true block
+    ; true block
 } else {
-    # false block
+    ; false block
 }
 
 ```
@@ -87,11 +87,11 @@ Syntax
 
 ```
 if condition1 {
-    # code for condition1
+    ; code for condition1
 } elseif condition2 {
-    # code for condition2
+    ; code for condition2
 } else {
-    # code if none of the above are true
+    ; code if none of the above are true
 }
 
 ```
