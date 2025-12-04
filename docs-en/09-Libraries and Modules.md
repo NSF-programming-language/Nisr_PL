@@ -70,7 +70,7 @@ class A {
     }
 }
 
-Print("library is running")   // Executes when library loads
+Print("library is running")   ; Executes when library loads
 ```
 ## 📝 Explanation
 
@@ -86,7 +86,7 @@ Print("library is running")   // Executes when library loads
 
 Before importing, compile the library:
 ```
-nsrcom test.ns -o lib
+nsrc test.ns -o lib
 ```
 
 The compiler produces:
