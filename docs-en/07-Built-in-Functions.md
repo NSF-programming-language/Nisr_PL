@@ -133,7 +133,21 @@ Print(tuple([1, 2, 3])) ; Output: (1, 2, 3)
 Print(tuple("NISR"))    ; Output: ("N", "I", "S", "R")
 ```
 
+## ❌ Invalid Type Conversions
 
+Some **built-in conversion functions** may fail when the provided input does not match the expected format. When a conversion cannot be performed safely, the runtime returns a clear and descriptive error.
+
+**Invalid Numeric Conversion:**
+```
+int("hello1")
+```
+
+**Result:**
+```
+Error: invalid numeric format
+```
+
+This occurs because the string `"hello1"` contains **non-numeric characters** and cannot be interpreted as a **valid integer**.
 ---
 
 
