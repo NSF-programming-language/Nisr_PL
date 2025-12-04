@@ -28,11 +28,13 @@
 
 We're building a next-generation programming language designed to redefine software development. This language combines the performance and robustness with the simplicity and readability and adds something new: **native multilingual support for developers around the world.**
 
+
+
+
 ---
 
 
-# Documentation
-
+### 📘Learn more : 
 - [Getting Started](01-Getting%20Started.md)
 - [Basic Syntax](02-Basic%20Syntax.md)
 - [Expressions and Operators](03-Expressions%20and%20Operators.md)
@@ -42,11 +44,11 @@ We're building a next-generation programming language designed to redefine softw
 - [Built-in-Functions](07-Built-in-Functions.md)
 - [Functions](08-Functions.md)
 - [Libraries and Modules](09-Libraries%20and%20Modules.md)
-- [Object Oriented Programming](10-Object%20Oriented%20Programming.md)
+- [Obect Oriented Programming](10-Object%20Oriented%20Programming.md)
 - [Language Configuration](11-Language%20Configuration.md)
 
+---
 
-## 🛠️ Feedback & Support
 
 <p align="center">
   <a href="https://forms.gle/kjmtNFNrPeScw4ox5">
