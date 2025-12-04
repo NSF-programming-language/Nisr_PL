@@ -148,6 +148,8 @@ Error: invalid numeric format
 ```
 
 This occurs because the string `"hello1"` contains **non-numeric characters** and cannot be interpreted as a **valid integer**.
+
+
 ---
 
 
