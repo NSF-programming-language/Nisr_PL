@@ -199,18 +199,18 @@ Print(name) ; Output: Haben
 ## 8.1 if...else
 Syntax
 ```
-if (condition) {
-    # code
+if condition {
+    ; code
 }
 else {
-    # code
+    ; code
 }
 ```
 Example
 ```
 age = 18
 
-if (age >= 18) {
+if age >= 18 {
    Print("Adult")
 }
 else {
@@ -219,24 +219,24 @@ else {
 ```
 ## 8.2 if...elseif...else
 ```
-if (condition) {
-    # code
+if condition {
+    ; code
 }
-elseif (condition) {
-    # code
+elseif condition {
+    ; code
 }
 else {
-    # code
+    ; code
 }
 ```
 Example
 ```
 age = 18
 
-if (age >= 18) {
+if age >= 18 {
    Print("Adult")
 }
-elseif (age >= 13) {
+elseif age >= 13 {
    Print("Teenager")
 }
 else {
@@ -262,7 +262,7 @@ for a in (1, 2, 3, 4) {
 Using `break`
 ```
 for a in (1, 2, 3, 4, 5) {
-    if (a == 3) {
+    if a == 3 {
         break;
     }
     Print(a)
@@ -271,7 +271,7 @@ for a in (1, 2, 3, 4, 5) {
 Using `continue`
 ```
 for a in (1, 2, 3, 4, 5) {
-    if (a == 3) {
+    if a == 3 {
         continue;
     }
     Print(a)
@@ -281,7 +281,7 @@ for a in (1, 2, 3, 4, 5) {
 ```
 i = 1
 
-while (i <= 5) {
+while i <= 5 {
     Print(i)
     i = i + 1
 }
@@ -290,8 +290,8 @@ while (i <= 5) {
 ```
 i = 1
 
-while (true) {
-    if (i > 3) {
+while true {
+    if i > 3 {
         break;
     }
     Print(i)
@@ -302,9 +302,9 @@ while (true) {
 ```
 i = 0
 
-while (i < 5) {
+while i < 5 {
     i = i + 1
-    if (i == 3) {
+    if i == 3 {
         continue;
     }
     Print(i)
