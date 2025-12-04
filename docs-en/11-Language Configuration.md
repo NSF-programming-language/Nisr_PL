@@ -18,7 +18,67 @@
 
 
 
+# How to Set Up Nisr
 
+## 1. Install Nisr
+- Install Nisr.exe on your system.
+- Go to the installation folder.
+- Add this folder to your system PATH.
+
+## 2. Verify Installation
+- Open Command Prompt and run:
+
+
+> nsrc --version
+> nsri --version
+
+
+## 3. Compile and Run Your First Program
+- Create a new folder anywhere.
+- Create a file named main.ns and write:
+
+> print("Hello World")
+
+- Open CMD in that folder and compile: nsrc main.ns
+- This will create main.nb
+- Run it using: nsri main.nb
+## 4. Setting Up Your Own Language
+**Nisr** allows you to create a custom programming language with translated keywords.
+
+## 4.1 Prepare Setup Tool
+- Go to the Nisr installation folder → tools folder.
+- Add this folder to your system PATH.
+- Verify installation:
+> setup --version
+## 4.2 Check Available Languages
+- Run:
+> setup --list-langs
+## 4.3 Extract a Sample Configuration
+- Choose a language code (example: **en**)
+- Run:
+> setup -ex-l en
+- This will extract all the configurations to the folder called nisr_config
+## 4.4 Edit Language Configuration
+- Each file contains key-value pairs: **Key = Nisr keyword, Value = your translation**
+- **Do NOT delete or add keys**, only edit values.
+## 4.5 Create Your Custom Language
+- Run:
+> setup -cl nisr_config custom_code
+- custom_code is the new language code you choose.
+- Follow the instructions shown in CMD.
+## 4.6 Compile Using Your Custom Language
+- Compile your program with:
+> nsrc main.ns --lang=custom_code
+- Run it:
+> nsri main.nb
+## Setup Complete
+You have successfully:
+
+- Installed Nisr
+- Compiled and ran your first program
+- Set up a custom programming language
+- Compiled and ran programs using your custom language
+> **Note**: Keep your **nisr_config** folder safe. Editing keys incorrectly may cause errors.
 
 
 
