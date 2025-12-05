@@ -40,7 +40,7 @@ The `if` statement runs a block of code only when its condition evaluates to `tr
 **Syntax**
 ```nisr
 if condition {
-    ; code to run if condition is true
+    # code to run if condition is true
 }
 ```
 Example
@@ -48,10 +48,10 @@ Example
 ```
 age = 18
 if age >= 18 {
-    Print("Adult")
+    print("Adult")
 }
 
-; Output: Adult
+# Output: Adult
 ```
 
 ## 1.2 ⚖ if...else Statement
@@ -61,9 +61,9 @@ This statement runs one block when the condition is `true`, and a different bloc
 Syntax
 ```
 if condition {
-    ; true block
+    # true block
 } else {
-    ; false block
+    # false block
 }
 
 ```
@@ -71,12 +71,12 @@ Example
 ```
 age = 15
 if age >= 18 {
-    Print("Adult")
+    print("Adult")
 } else {
-    Print("Child")
+    print("Child")
 }
 
-; Output: Child
+# Output: Child
 
 ```
 ## 1.3 🚦 if...elseif...else Statement
@@ -87,11 +87,11 @@ Syntax
 
 ```
 if condition1 {
-    ; code for condition1
+    # code for condition1
 } elseif condition2 {
-    ; code for condition2
+    # code for condition2
 } else {
-    ; code if none of the above are true
+    # code if none of the above are true
 }
 
 ```
@@ -99,14 +99,14 @@ Example
 ```
 age = 18
 if age > 18 {
-    Print("Adult")
+    print("Adult")
 } elseif age == 18 {
-    Print("Teenager")
+    print("Teenager")
 } else {
-    Print("Child")
+    print("Child")
 }
 
-; Output: Teenager
+# Output: Teenager
 ```
 
 ## 1.4 🧱 Nested Control Statements
@@ -120,15 +120,15 @@ has_ticket = true
 
 if age > 18 {
     if has_ticket {
-        Print("Allowed entry")
+        print("Allowed entry")
     } else {
-        Print("Need ticket to enter")
+        print("Need ticket to enter")
     }
 } else {
-    Print("Too young to enter")
+    print("Too young to enter")
 }
 
-; Output: Allowed entry
+# Output: Allowed entry
 ```
 
 ## 2. 🔄 Loops and Iteration
@@ -156,18 +156,18 @@ Examples of `range()`:
 1. `range(stop)`
 ```
 for a in range(3) {
-    Print(a)
+    print(a)
 }
 
-; Output: 0, 1, 2
+# Output: 0, 1, 2
 ```
 2. `range(start, stop)`
 ```
 for i in range(2, 4) {
-    Print(i)
+    print(i)
 }
 
-; Output: 2, 3
+# Output: 2, 3
 ```
 ## 🛑 The break Statement
 
@@ -179,10 +179,10 @@ for a in range(5) {
     if a == 3 {
         break
     }
-    Print(a)
+    print(a)
 }
 
-; Output: 0, 1, 2
+# Output: 0, 1, 2
 ```
 
 ## ⏭ The continue Statement
@@ -196,10 +196,10 @@ for a in range(5) {
     if a == 3 {
         continue
     }
-    Print(a)
+    print(a)
 }
 
-; Output: 0, 1, 2, 4
+# Output: 0, 1, 2, 4
 ```
 
 ## 2.2 ⏳ while Loop
@@ -219,11 +219,11 @@ Example
 ```
 count = 1
 while count <= 3 {
-    Print(count)
-    count = count + 1   ; This ensures the loop terminates
+    print(count)
+    count = count + 1   # This ensures the loop terminates
 }
 
-; Output: 1, 2, 3
+# Output: 1, 2, 3
 
 ```
 
@@ -241,11 +241,11 @@ while i <= 5 {
     if i == 4 {
         break
     }
-    Print(i)
+    print(i)
     i = i + 1
 }
 
-; Output: 1, 2, 3
+# Output: 1, 2, 3
 ```
 
 ---
