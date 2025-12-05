@@ -43,7 +43,7 @@ Open your newly created `.ns` file in a code editor such as **VS Code**.
 ## 📝 2. Write Your First Code
 
 ```nisr
-Print("Hello World")
+print("Hello World")
 ```
 
 ---
