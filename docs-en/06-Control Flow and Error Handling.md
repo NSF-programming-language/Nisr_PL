@@ -159,7 +159,9 @@ for a in range(3) {
     print(a)
 }
 
-# Output: 0, 1, 2
+# Output: 0
+          1
+          2
 ```
 2. `range(start, stop)`
 ```
@@ -167,7 +169,8 @@ for i in range(2, 4) {
     print(i)
 }
 
-# Output: 2, 3
+# Output: 2
+          3
 ```
 ## 🛑 The break Statement
 
@@ -182,7 +185,9 @@ for a in range(5) {
     print(a)
 }
 
-# Output: 0, 1, 2
+# Output: 0
+          1
+          2
 ```
 
 ## ⏭ The continue Statement
@@ -199,7 +204,10 @@ for a in range(5) {
     print(a)
 }
 
-# Output: 0, 1, 2, 4
+# Output: 0
+          1
+          2
+          4
 ```
 
 ## 2.2 ⏳ while Loop
@@ -223,7 +231,9 @@ while count <= 3 {
     count = count + 1   # This ensures the loop terminates
 }
 
-# Output: 1, 2, 3
+# Output: 1
+          2
+          3
 
 ```
 
@@ -245,7 +255,9 @@ while i <= 5 {
     i = i + 1
 }
 
-# Output: 1, 2, 3
+# Output: 1
+          2
+          3
 ```
 
 ---
