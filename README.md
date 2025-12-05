@@ -26,7 +26,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/⚡_Fast-Compiler_&_Interpreter-informational?style=flat-square" />
   <img src="https://img.shields.io/badge/🦅%20NISR%20Design%20System-critical-red?style=flat-square" />
   <img src="https://img.shields.io/badge/📘_Official-Documentation-blue?style=flat-square" />
 </p>
