@@ -383,6 +383,9 @@ class Student(Person, Human) {
     }
 }
 ```
+Details :
+- [Obect Oriented Programming](10-Object%20Oriented%20Programming.md)
+
 ---
 
 
