@@ -15,7 +15,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🚀 Performance-High-success?style=for-the-badge" />
   <img src="https://img.shields.io/badge/🌐 Multilingual-Supported-informational?style=for-the-badge" />
 </p>
 
@@ -32,7 +31,7 @@
 </p>
 
 
-We're building a next-generation programming language designed to redefine software development. This language combines the performance and robustness with the simplicity and readability and adds something new: **native multilingual support for developers around the world.**
+We're building a next-generation programming language designed to redefine software development. This language combines simplicity and readability and adds something new: **native multilingual support for developers around the world.**
 
 
 
