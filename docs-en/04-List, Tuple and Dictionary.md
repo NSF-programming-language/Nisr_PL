@@ -359,7 +359,7 @@ print(dict1.values())
 items()
 ```
 print(dict1.items())
-# ["name":"Abe", "age":30, 10:"nisr5.0"]
+# [("name":"Abe"), ("age":30), (10:"nisr5.0")]
 ```
 ## 4.1 has() – Check If Key Exists
 ```
