@@ -23,15 +23,15 @@ All examples use real NISR syntax.
 ## 🖨️ 1. Print() Function
 Multiple Values
 ```
-Print("Hello", "World")
+print("Hello", "World")
 ```
 Custom Separator
 ```
-Print("hello", "world", sep="*")
+print("hello", "world", sep="*")
 ```
 Expressions
 ```
-Print(10 ** 2)
+print(10 ** 2)
 ```
 ## 📌 2. Variable Declaration
 
@@ -69,26 +69,26 @@ Comment
 ```
 ## 🖥 4. Printing Output
 
-Use `Print()` to display text or values.
+Use `print()` to display text or values.
 
 Simple Print
 ```
-Print("Hello World")
+print("Hello World")
 ```
 Multiple Values
 ```
-Print("Hello", "World")
+print("Hello", "World")
 ```
 Custom Separator
 ```
-Print("A", "B", "C", sep="-")
-; Output: A-B-C
+print("A", "B", "C", sep="-")
+# Output: A-B-C
 ```
 Arithmetic Inside Print
 ```
-Print(10 + 5)    ; Output: 15
-Print(6 * 6)     ; Output: 36
-Print(10 ** 2)   ; Output: 100
+print(10 + 5)    # Output: 15
+print(6 * 6)     # Output: 36
+print(10 ** 2)   # Output: 100
 ```
 ## 📦 5. Variables & Declaration (Detailed Reference)
 
@@ -99,10 +99,10 @@ Print(10 ** 2)   ; Output: 100
 **NISR** is dynamically typed. Variables are created when assigned.
 ```
 X = "name"
-Print(X) ; Output: name
+print(X) # Output: name
 
-x = 4        ; Integer
-x = "Sally"  ; Now String
+x = 4        # Integer
+x = "Sally"  # Now String
 ```
 ## 5.2 Naming Rules
 
@@ -118,22 +118,22 @@ Variable names must:
 
 ❌ Invalid Examples
 ```
-1name = "hello"    ; cannot start with number
-user-age = 20      ; hyphen not allowed
+1name = "hello"    # cannot start with number
+user-age = 20      # hyphen not allowed
 ```
 ## 5.3 Variable Scope
 ```
-a = "Outside block" ; Global scope
+a = "Outside block" # Global scope
 
 fun block_example() {
-    b = "Inside block" ; Local scope
-    Print(b)
+    b = "Inside block" # Local scope
+    print(b)
 }
 
-block_example() ; Output: Inside block
+block_example() # Output: Inside block
 
-Print(a) ; Output: Outside block
-; Print(b) ; ERROR: b is not available globally
+print(a) # Output: Outside block
+; print(b) # ERROR: b is not available globally
 
 ```
 ## 📊 6. NISR Data Types
@@ -180,17 +180,17 @@ person = {
     true: [3, 4, 6, 7]
 }
 
-Print(person["name"]) ; Output: Haben
+print(person["name"]) # Output: Haben
 ```
 ## 🔄 7. Dynamic Typing
 
 **NISR** checks variable type at runtime.
 ```
 name = 80
-Print(name) ; Output: 80
+print(name) # Output: 80
 
 name = "Haben"
-Print(name) ; Output: Haben
+print(name) # Output: Haben
 ```
 ## 🧮 8. Conditional Statements
 
@@ -211,10 +211,10 @@ Example
 age = 18
 
 if age >= 18 {
-   Print("Adult")
+   print("Adult")
 }
 else {
-   Print("Child")
+   print("Child")
 }
 ```
 ## 8.2 if...elseif...else
@@ -234,13 +234,13 @@ Example
 age = 18
 
 if age >= 18 {
-   Print("Adult")
+   print("Adult")
 }
 elseif age >= 13 {
-   Print("Teenager")
+   print("Teenager")
 }
 else {
-   Print("Child")
+   print("Child")
 }
 ```
 ## 🔁 9. Loops
@@ -256,7 +256,7 @@ else {
 ## 9.1 For Loop
 ```
 for a in (1, 2, 3, 4) {
-    Print(a)
+    print(a)
 }
 ```
 Using `break`
@@ -265,7 +265,7 @@ for a in (1, 2, 3, 4, 5) {
     if a == 3 {
         break;
     }
-    Print(a)
+    print(a)
 }
 ```
 Using `continue`
@@ -274,7 +274,7 @@ for a in (1, 2, 3, 4, 5) {
     if a == 3 {
         continue;
     }
-    Print(a)
+    print(a)
 }
 ```
 ## 9.2 While Loop
@@ -282,7 +282,7 @@ for a in (1, 2, 3, 4, 5) {
 i = 1
 
 while i <= 5 {
-    Print(i)
+    print(i)
     i = i + 1
 }
 ```
@@ -294,7 +294,7 @@ while true {
     if i > 3 {
         break;
     }
-    Print(i)
+    print(i)
     i = i + 1
 }
 ```
@@ -307,7 +307,7 @@ while i < 5 {
     if i == 3 {
         continue;
     }
-    Print(i)
+    print(i)
 }
 ```
 ## 🧩 10. Functions in NISR
@@ -344,7 +344,7 @@ fun add(a, b) {
     return a + b
 }
 
-sum = add(3, 4) ; sum = 7
+sum = add(3, 4) # sum = 7
 ```
 ## Default Parameters
 ```
@@ -352,8 +352,8 @@ fun greet(name = "User") {
     print("Hello, " + name)
 }
 
-greet()        ; Hello, User
-greet("Helen") ; Hello, Helen
+greet()        # Hello, User
+greet("Helen") 3 Hello, Helen
 ```
 ## 🏷️ 11. Class Declaration
 
@@ -369,7 +369,7 @@ class Person {
     }
 
     fun show() {
-        Print("Name:", this.name, "Age:", this.age)
+        print("Name:", this.name, "Age:", this.age)
     }
 }
 ```
@@ -384,7 +384,7 @@ class Student(Person, Human) {
     }
 
     fun showGrade() {
-        Print("Grade:", this.grade)
+        print("Grade:", this.grade)
     }
 }
 ```
@@ -394,7 +394,7 @@ class Student(Person, Human) {
 ```
 import math
 
-Print(math.square(5))
+print(math.square(5))
 ```
 ## 12.2 Importing Multiple Files
 ```
