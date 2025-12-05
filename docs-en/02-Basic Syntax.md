@@ -133,7 +133,7 @@ fun block_example() {
 block_example() # Output: Inside block
 
 print(a) # Output: Outside block
-; print(b) # ERROR: b is not available globally
+# print(b) # ERROR: b is not available globally
 
 ```
 ## 📊 6. NISR Data Types
