@@ -200,10 +200,10 @@ print(name) # Output: Haben
 Syntax
 ```
 if condition {
-    ; code
+    # code
 }
 else {
-    ; code
+    # code
 }
 ```
 Example
@@ -220,13 +220,13 @@ else {
 ## 8.2 if...elseif...else
 ```
 if condition {
-    ; code
+    # code
 }
 elseif condition {
-    ; code
+    # code
 }
 else {
-    ; code
+    # code
 }
 ```
 Example
@@ -263,7 +263,7 @@ Using `break`
 ```
 for a in (1, 2, 3, 4, 5) {
     if a == 3 {
-        break;
+        break
     }
     print(a)
 }
@@ -272,7 +272,7 @@ Using `continue`
 ```
 for a in (1, 2, 3, 4, 5) {
     if a == 3 {
-        continue;
+        continue
     }
     print(a)
 }
@@ -292,7 +292,7 @@ i = 1
 
 while true {
     if i > 3 {
-        break;
+        break
     }
     print(i)
     i = i + 1
@@ -305,7 +305,7 @@ i = 0
 while i < 5 {
     i = i + 1
     if i == 3 {
-        continue;
+        continue
     }
     print(i)
 }
@@ -322,18 +322,13 @@ fun greet(name) {
 }
 ```
 
-Omitting Parentheses (no parameters)
+ Function with no parameters
 ```
 fun say_hello() {
     print("Hello!")
 }
 ```
-```
-welcome {
-    print("Welcome to NISR")
-}
 
-```
 ## 10.2 Calling Functions
 ```
 greet("Sara")
@@ -353,7 +348,7 @@ fun greet(name = "User") {
 }
 
 greet()        # Hello, User
-greet("Helen") 3 Hello, Helen
+greet("Helen") # Hello, Helen
 ```
 ## 🏷️ 11. Class Declaration
 
@@ -388,51 +383,6 @@ class Student(Person, Human) {
     }
 }
 ```
-## 📦 12. Importing Libraries
-
-## 12.1 Single Built-in Library
-```
-import math
-
-print(math.square(5))
-```
-## 12.2 Importing Multiple Files
-```
-utils/
-    strings.ns
-    numbers.ns
-    dates.ns
-```
-
-Instead of:
-```
-import utils.strings
-import utils.numbers
-import utils.dates
-```
-
-You can write:
-```
-import utils(strings, numbers, dates)
-```
-## 12.3 Importing From Subfolders
-```
-main_folder/
-    data/
-        users.ns
-```
-```
-import main_folder(data.users)
-```
-## 12.4 Importing From Same Directory
-```
-helper.ns
-main.ns
-```
-```
-import helper
-```
-
 ---
 
 
