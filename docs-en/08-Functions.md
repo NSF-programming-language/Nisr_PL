@@ -36,7 +36,7 @@ In **NISR**:
 ```nisr
 fun function_name(parameters) {
     # Function logic
-    return expression ; Optional
+    return expression # Optional
 }
 
 ```
