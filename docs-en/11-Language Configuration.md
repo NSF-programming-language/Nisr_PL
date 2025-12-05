@@ -16,19 +16,14 @@
 ---
 
 
+# How to Set Up Nisr
+
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=Hf9pxYfjT9Q">
-    <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" alt="Watch the video" />
+  <a href="https://youtu.be/Hf9pxYfJT9Q">
+    <img src="https://img.youtube.com/vi/Hf9pxYfJT9Q/maxresdefault.jpg" alt="Watch the video" />
   </a>
 </p>
 
-
----
-
-
-
-
-# How to Set Up Nisr
 
 ## 1. Install Nisr
 - Install Nisr.exe on your system.
