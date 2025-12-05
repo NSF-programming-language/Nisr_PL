@@ -82,7 +82,7 @@ p = Person("NISR5.0", 1)
 print(p.greet())       # Output: Hello, NISR5.0
 ```
 
-## 1.4 Class (Static) Attributes
+## 1.4 Class Shared Attributes
 
 Shared by all **instances** of the class.
 ```
@@ -178,7 +178,7 @@ class Person{
 
 class Employee(Person) {
     fun Employee(name, id) {
-        super.person(name)
+        super().person(name)
         this.id = id
     }
 }
