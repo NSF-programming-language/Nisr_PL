@@ -33,7 +33,7 @@ This guide helps new users quickly learn how to write, compile, and run their fi
 All NISR source files must use the `.ns` extension.
 
 - **File Extension:** `.ns`
-- **Example Filename:** `test.ns`
+- **Example Filename:** `main.ns`
 
 ### **1.2 Open the File**
 Open your newly created `.ns` file in a code editor such as **VS Code**.
@@ -52,7 +52,7 @@ Print("Hello World")
 
 ### Compile:
 ```bash
-nsrc test.ns -o main
+nsrc main.ns
 ```
 
 ### Run:
