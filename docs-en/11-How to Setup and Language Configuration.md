@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://youtu.be/Hf9pxYfJT9Q">
-    <img src="https://img.youtube.com/vi/Hf9pxYfJT9Q/maxresdefault.jpg" alt="Watch the video" />
+    <img src="assets/nisr.jpg" alt="Watch the video" />
   </a>
 </p>
 
