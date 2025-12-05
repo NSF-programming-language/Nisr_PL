@@ -32,17 +32,17 @@ Defined using the `class` keyword.
 
 **Syntax**
 ```nisr
-class ClassName(
-    ; attributes and methods
-)
+class ClassName{
+    # attributes and methods
+}
 ```
 Object Creation
 ```
-class Person()
+class Person{}
     ; Class definition
 
-p = Person()     ; Creating an object
-print(p)         ; Output: <object Person>
+p = Person()     # Creating an object
+print(p)         # Output: <object Person>
 ```
 
 ## 1.2 Constructor (fun ClassName())
@@ -50,15 +50,15 @@ print(p)         ; Output: <object Person>
 A constructor initializes object attributes when an object is created.
 
 ```
-class Person(
+class Person{
     fun Person(name, age) {
         this.name = name
         this.age = age
     }
-)
+}
 
 p = Person("NISR5.0", 1)
-print(p.name, p.age)      ; Output: NISR5.0 1
+print(p.name, p.age)      # Output: NISR5.0 1
 ```
 
 ⚠️ Incorrect usage produces an argument-size error.
@@ -67,63 +67,51 @@ print(p.name, p.age)      ; Output: NISR5.0 1
 
 **Instance methods** operate on the **object's data**.
 ```
-class Person(
+class Person{
     fun Person(name, age) {
         this.name = name
         this.age = age
     }
 
     fun greet() {
-        return "Hello, ;(this.name)"
+        return "Hello, #(this.name)"
     }
 )
 
 p = Person("NISR5.0", 1)
-print(p.greet())       ; Output: Hello, NISR5.0
+print(p.greet())       # Output: Hello, NISR5.0
 ```
 
 ## 1.4 Class (Static) Attributes
 
 Shared by all **instances** of the class.
 ```
-class Circle(
+class Circle{
     PI = 3.14159
 
     fun Circle(radius) {
         this.radius = radius
     }
-)
+}
 
-print(Circle.PI)     ; Output: 3.14159
-```
-## 1.5 Class (Static) Methods
-
-Defined using the **static** keyword.
-```
-class MathUtil(
-    static fun sum(x, y) {
-        return x + y
-    }
-)
-
-print(MathUtil.sum(5, 10))   ; Output: 15
+print(Circle.PI)     # Output: 3.14159
 ```
 ## 1.6 Private Attributes
 
 **Private attributes** start with` _ `and **cannot** be accessed outside the class.
 ```
-class BankAccount(
+class BankAccount{
     fun BankAccount(balance) {
-        this._balance = balance
+        this.__balance = balance
     }
 
     fun getBalance() {
-        return this._balance
+        return this.__balance
     }
-)
+}
 
 acc = BankAccount(1000)
-print(acc.getBalance())   ; Output: 1000
+print(acc.getBalance())   # Output: 1000
 ```
 
 ---
@@ -133,16 +121,16 @@ print(acc.getBalance())   ; Output: 1000
 
 Allows a **child class** to reuse **attributes** and **methods** of a **parent class**.
 ```
-class Animal(
+class Animal{
     fun speak() {
         return "Some sound"
     }
-)
+}
 
 class Dog(Animal) { }
 
 d = Dog()
-print(d.speak())      ; Output: Some sound
+print(d.speak())      # Output: Some sound
 ```
 
 Method Overriding
@@ -153,7 +141,7 @@ class Dog(Animal) {
     }
 }
 
-print(Dog().speak())      ; Output: woof!
+print(Dog().speak())      # Output: woof!
 ```
 
 ## 2.2 Multiple Inheritance
@@ -167,36 +155,36 @@ class C(A, B) { }
 
 Different classes responding differently to the same method.
 ```
-class A(
+class A{
     fun speak() { return "A speaking" }
-)
+}
 
-class B(
+class B{
     fun speak() { return "B speaking" }
-)
+}
 
-print(A().speak())    ; A speaking
-print(B().speak())    ; B speaking
+print(A().speak())    # A speaking
+print(B().speak())    # B speaking
 ```
 ## 2.4 Super Function
 
 Used to call **parent-class constructors/methods**.
 ```
-class Person(
+class Person{
     fun Person(name) {
         this.name = name
     }
-)
+}
 
 class Employee(Person) {
     fun Employee(name, id) {
-        super(name)
+        super.person(name)
         this.id = id
     }
 }
 
 e = Employee("Abebe", 101)
-print(e.name, e.id)    ; Abebe 101
+print(e.name, e.id)    # Abebe 101
 ```
 
 
