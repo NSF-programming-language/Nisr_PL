@@ -46,7 +46,7 @@ Libraries help you write cleaner, reusable, and more maintainable code.
 
 ```ns
 fun display() {
-    Print("function from library")
+    print("function from library")
     return true
 }
 
@@ -70,7 +70,7 @@ class A {
     }
 }
 
-Print("library is running")   ; Executes when library loads
+print("library is running")   # Executes when library loads
 ```
 ## 📝 Explanation
 
@@ -115,7 +115,7 @@ When imported:
 ```
 import lib
 
-Print(lib.display())
+print(lib.display())
 ```
 Output
 ```
@@ -127,7 +127,7 @@ true
 ```
 import lib
 
-Print(lib.add(1000, 300))
+print(lib.add(1000, 300))
 ```
 
 Output
@@ -140,7 +140,7 @@ library is running
 import lib
 
 obj = lib.A(name="Nisr", age=20)
-Print(obj.getName(), obj.getAge())
+print(obj.getName(), obj.getAge())
 ```
 Output
 ```
