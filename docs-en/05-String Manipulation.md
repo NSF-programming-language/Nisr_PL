@@ -30,8 +30,8 @@ Both single and double quotes are supported.
 ```
 txt = "hello world"
 name = 'Alem'
-Print(txt, name)
-; Output: hello world Alem
+print(txt, name)
+# Output: hello world Alem
 ```
 ## 1.2 Finding the Length of a String (len())
 
@@ -40,8 +40,8 @@ Use `len()` to get the number of characters in the string.
 👉 **Spaces count as characters**.
 ```
 str1 = "hello team nisr"
-Print(len(str1))
-; Output: 15
+print(len(str1))
+# Output: 15
 ```
 ## 1.3 String Immutability
 
@@ -54,8 +54,8 @@ Strings in **NISR** are **immutable**, meaning:
 ```
 name = "nahom"
 name = "Alem"   # Now refers to a new string
-Print(name)
-; Output: Alem
+print(name)
+# Output: Alem
 ```
 ## 2. 🔍 Accessing and Slicing Content
 ## 2.1 String Indexing
@@ -65,14 +65,14 @@ Strings support **0-based indexing**, allowing you to access individual characte
 🔹 Positive Indexing (from the start)
 ```
 str1 = "hello"
-Print(str1[0])
-; Output: h
+print(str1[0])
+# Output: h
 ```
 🔹 Negative Indexing (from the end)
 ```
 str1 = "hello"
-Print(str1[-1])
-; Output: o
+print(str1[-1])
+# Output: o
 ```
 ## 2.2 String Slicing
 
@@ -88,8 +88,8 @@ string[start:end]
 Example:
 ```
 str1 = "hello world"
-Print(str1[0:5])
-; Output: hello
+print(str1[0:5])
+# Output: hello
 ```
 
 ## 3. 🛠 Transformation and Utility Methods
@@ -101,11 +101,11 @@ Print(str1[0:5])
 
 ```
 str1 = "Hello World"
-Print(str1.upper())
-; Output: HELLO WORLD
+print(str1.upper())
+# Output: HELLO WORLD
 
-Print(str1.lower())
-; Output: hello world
+print(str1.lower())
+# Output: hello world
 
 ```
 
@@ -115,8 +115,8 @@ Removes **leading** and **trailing** whitespace (`spaces`, `tabs`, etc.).
 
 ```
 str1 = "    Hello World   "
-Print(str1.strip())
-; Output: Hello World
+print(str1.strip())
+# Output: Hello World
 ```
 
 ## 3.3 startswith() & endswith()
@@ -126,9 +126,9 @@ Returns `true` or `false`.
 
 ```
 str1 = "Hello World"
-Print(str1.startswith("H"))       ; true
-Print(str1.endswith("World"))     ; true
-Print(str1.startswith("lol"))     ; false
+print(str1.startswith("H"))       # true
+print(str1.endswith("World"))     # true
+print(str1.startswith("lol"))     # false
 ```
 
 ## 3.4 replace()
@@ -137,8 +137,8 @@ Replaces all occurrences of a substring with another.
 
 ```
 str1 = "selam"
-Print(str1.replace("selam", "world"))
- ; Output: world
+print(str1.replace("selam", "world"))
+ # Output: world
 ```
 
 ## 4. ➕ Operators and Formatting
@@ -154,9 +154,9 @@ str1 = "A"
 str2 = "B"
 
 if str1 <= str2 {
-    Print("equal")
+    print("equal")
 }
-; Output: equal
+# Output: equal
 
 ```
 ## 4.2 String Concatenation (+)
@@ -168,8 +168,8 @@ str1 = "hello"
 str2 = "Nisr team"
 str3 = str1 + " " + str2
 
-Print(str3)
-; Output: hello Nisr team
+print(str3)
+# Output: hello Nisr team
 ```
 
 ## 4.3 String Multiplication (*)
@@ -179,8 +179,8 @@ Repeat a string multiple times.
 ```
 str1 = "hi"
 str2 = str1 * 6
-Print(str2)
-; Output: hi hi hi hi hi hi
+print(str2)
+# Output: hi hi hi hi hi hi
 
 ```
 
@@ -192,8 +192,8 @@ Print(str2)
 ```
 name = "Abrham"
 age = 40
-Print("#{name} is #{age}")
-; Output: Abrham is 40
+print("#{name} is #{age}")
+# Output: Abrham is 40
 ```
 5.2 Formatting with Function Calls
 ```
@@ -201,8 +201,8 @@ fun display() {
     return 10000 
 }
 
-Print("Value: #{display()}")
-; Output: Value: 10000
+print("Value: #{display()}")
+# Output: Value: 10000
 ```
 
 
