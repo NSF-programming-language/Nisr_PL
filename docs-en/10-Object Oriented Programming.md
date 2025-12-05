@@ -39,7 +39,7 @@ class ClassName{
 Object Creation
 ```
 class Person{}
-    ; Class definition
+    # Class definition
 
 p = Person()     # Creating an object
 print(p)         # Output: <object Person>
