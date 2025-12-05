@@ -150,11 +150,11 @@ print(y) # Output: 3
 
 or **you can also use them as text form**:
 
-- AND — Logical AND (true only if both are true)
+- and — Logical AND (true only if both are true)
 
-- OR — Logical OR (true if at least one is true)
+- or — Logical OR (true if at least one is true)
 
-- NOT — Logical NOT (inverts Boolean value)
+- not  — Logical NOT (inverts Boolean value)
 
   
 ✔ NISR Truthiness Rules
