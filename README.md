@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <a href="[https://github.com/NSF-programming-language/Nisr_PL/releases/download/v0.0.4/Nisr.exe](https://github.com/NSF-programming-language/Nisr_PL/releases/download/v0.0.4/NISR.PL.zip)">
+  <a href="https://github.com/NSF-programming-language/Nisr_PL/releases/download/v0.0.4/NISR.PL.zip">
     <img src="https://img.shields.io/badge/Try-NISR-green?style=for-the-badge" />
   </a>
 </p>
