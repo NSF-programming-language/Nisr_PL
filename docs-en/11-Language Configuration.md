@@ -16,6 +16,16 @@
 ---
 
 
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Hf9pxYfjT9Q">
+    <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" alt="Watch the video" />
+  </a>
+</p>
+
+
+---
+
+
 
 
 # How to Set Up Nisr
