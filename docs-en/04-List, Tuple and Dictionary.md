@@ -63,8 +63,8 @@ nested = [
     [true, false]
 ]
 
-Print(nested[0])       ; [1, 2, 3]
-Print(nested[1][1])   ; b
+print(nested[0])       # [1, 2, 3]
+print(nested[1][1])   # b
 ```
 
 ## 1.3 🎯 Accessing List Elements (Indexing)
@@ -77,8 +77,8 @@ Print(nested[1][1])   ; b
 ```
 fruits = ["apple", "banana", "orange"]
 
-Print(fruits[0])   ; apple
-Print(fruits[2])   ; orange
+print(fruits[0])   # apple
+print(fruits[2])   # orange
 ```
 
 ## 1.4 ✏ Updating List Items
@@ -88,10 +88,10 @@ Print(fruits[2])   ; orange
 ```
 
 fruits = ["apple", "banana", "orange"]
-Print(fruits[0])        ; apple
+print(fruits[0])        # apple
 
 fruits[0] = "grape"
-Print(fruits[0])        ; grape
+print(fruits[0])        # grape
 ```
 ## 1.5 ➕ Adding Items (append)
 
@@ -99,7 +99,7 @@ Print(fruits[0])        ; grape
 numbers = [1, 2]
 numbers.append(3)
 
-Print(numbers) ; [1, 2, 3]
+print(numbers) # [1, 2, 3]
 ```
 
 ## 1.6 🔼 Inserting Items (insert)
@@ -108,7 +108,7 @@ Print(numbers) ; [1, 2, 3]
 fruits = ["banana", "orange"]
 fruits.insert(0, "apple")
 
-Print(fruits) ; ["apple", "banana", "orange"]
+print(fruits) # ["apple", "banana", "orange"]
 ```
 
 ## 1.7 ❌ Removing Items (remove)
@@ -117,7 +117,7 @@ Print(fruits) ; ["apple", "banana", "orange"]
 colors = ["red", "green", "blue"]
 colors.remove("green")
 
-Print(colors) ; ["red", "blue"]
+print(colors) # ["red", "blue"]
 ```
 
 ## 1.8 ✂ List Slicing
@@ -134,7 +134,7 @@ list[start:end]
 data = [10, 20, 30, 40, 50]
 subset = data[1:4]
 
-Print(subset) ; [20, 30, 40]
+print(subset) # [20, 30, 40]
 ```
 
 ---
@@ -159,11 +159,11 @@ months = ("Jan", "Feb", "Mar")
 One-item tuple:
 
 ```
-single_item = (100,)     ; tuple
-not_a_tuple = (100)      ; integer!
+single_item = (100,)     # tuple
+not_a_tuple = (100)      # integer!
 
-Print(typeof(single_item)) ; tuple
-Print(typeof(not_a_tuple)) ; int
+print(typeof(single_item)) # tuple
+print(typeof(not_a_tuple)) # int
 ```
 ## 2.2 📚 Nested Tuples
 
@@ -174,11 +174,11 @@ nested_tuple = (
     ("a", "b")
 )
 
-Print(nested_tuple[1])      ; (3, 4, 5)
-Print(nested_tuple[2][0])   ; "a"
+print(nested_tuple[1])      # (3, 4, 5)
+print(nested_tuple[2][0])   # "a"
 
 combo = (1, [10, 20], "X")
-Print(combo[1][0]) ; 10
+print(combo[1][0]) # 10
 ```
 
 ## 2.3 🎯 Accessing Tuple Items
@@ -186,7 +186,7 @@ Print(combo[1][0]) ; 10
 ```
 colors = ("red", "green", "blue")
 
-Print(colors[0]) ; red
+print(colors[0]) # red
 ```
 
 ## 2.4 🔗 Tuple Concatenation
@@ -197,7 +197,7 @@ Tuples can be combined using `+`:
 t1 = (1, 2)
 t2 = (3, 4)
 
-Print(t1 + t2) ; (1, 2, 3, 4)
+print(t1 + t2) # (1, 2, 3, 4)
 ```
 
 ## 2.5 🧮 Tuple Methods
@@ -210,10 +210,10 @@ Tuples support limited methods:
 
 ```
 t = (1, 2, 2, 3)
-Print(t.count(2)) ; 2
+print(t.count(2)) # 2
 
 t2 = (10, 20, 30)
-Print(len(t2)) ; 3
+print(len(t2)) # 3
 ```
 
 ## 2.6 📤 Returning a Tuple From a Function
@@ -223,7 +223,7 @@ fun get_range() {
     return (1, 10)
 }
 
-Print(get_range()) ; (1, 10)
+print(get_range()) # (1, 10)
 ```
 
 ---
@@ -262,20 +262,20 @@ dict1 = {
     10: "nisr5.0"
 }
 
-Print(dict1)
-; Output may vary
+print(dict1)
+# Output may vary
 ```
 
 ## 1.2 Accessing Values
 
 ```
-Print(dict1["name"])    ; Abe
+print(dict1["name"])    # Abe
 ```
 
 ## 1.3 Dictionary Size – len()
 
 ```
-Print(len(dict1)) ; 3
+print(len(dict1)) # 3
 ```
 
 ## 2. 📝 Modification and Creation
@@ -285,8 +285,8 @@ Print(len(dict1)) ; 3
 ```
 dict1["name"] = "Kidan"
 
-Print(dict1)
-; { "name": "Kidan", "age": 30, 10: "nisr5.0" }
+print(dict1)
+# { "name": "Kidan", "age": 30, 10: "nisr5.0" }
 ```
 
 
@@ -299,22 +299,22 @@ dict1["members"] = 7
 
 ##3.1 get() – Safe Access
 ```
-Print(dict1.get("name"))       ; Kidan
-Print(dict1.get("kkk"))        ; null
-Print(dict1.get("kkk", 100))   ; 100
+print(dict1.get("name"))       # Kidan
+print(dict1.get("kkk"))        # null
+print(dict1.get("kkk", 100))   # 100
 ```
 ## 3.2 set() – Add New Entry
 ```
 a = dict1.set("version", 2)
 
-Print(dict1, a)
+print(dict1, a)
 ```
 ## 3.3 delete() – Remove a Key
 ```
 dict1 = { "name": "Abe", "age": 30, 10: "nisr5.0" }
 s = dict1.delete(10)
 
-Print(dict1, s)    ; { "name": "Abe", "age": 30 } true
+print(dict1, s)    # { "name": "Abe", "age": 30 } true
 ```
 ## 3.4 update() – Merge Dictionaries
 
@@ -324,52 +324,52 @@ dict1 = { "name":"Abe", "age":30 }
 dict2 = { 20:30, "grade": 10 }
 
 w = dict1.update(dict2)
-Print(dict1, w)
+print(dict1, w)
 ```
 Merge a single key-value pair:
 ```
 w = dict1.update("city": "Addis")
-Print(dict1, w)
+print(dict1, w)
 ```
 
 ## 3.5 size() – Alternative to len()
 ```
 dict1 = { "name":"Abe", "age":30 }
 
-Print(dict1.size()) ; 2
+print(dict1.size()) # 2
 ```
 
 ## 3.6 clear() – Remove All Items
 ```
-Print(dict1.clear()) ; {}
+print(dict1.clear()) # {}
 ```
 ## 4. 🔑 Retrieval Methods
 keys()
 ```
 dict1 = { "name": "Abe", "age": 30, 10: "nisr5.0" }
 
-Print(dict1.keys())
-; ["name", "age", 10]
+print(dict1.keys())
+# ["name", "age", 10]
 ```
 values()
 ```
-Print(dict1.values())
-; ["Abe", 30, "nisr5.0"]
+print(dict1.values())
+# ["Abe", 30, "nisr5.0"]
 ```
 items()
 ```
-Print(dict1.items())
-; ["name":"Abe", "age":30, 10:"nisr5.0"]
+print(dict1.items())
+# ["name":"Abe", "age":30, 10:"nisr5.0"]
 ```
 ## 4.1 has() – Check If Key Exists
 ```
 if has(555) {
-    Print(true)
+    print(true)
 } else {
-    Print(false)
+    print(false)
 }
 
-; false
+# false
 ```
 
 ---
