@@ -61,21 +61,21 @@ Repeats a `string`, `list`, or `tuple`.
 str1 = "hello"
 str2 = ", world"
 
-str3 = str1 + str2   ; Concatenation
-Print(str3)          ; Output: hello, world
+str3 = str1 + str2   # Concatenation
+print(str3)          # Output: hello, world
 
-str4 = str1 * 3      ; Repetition
-Print(str4)          ; Output: hellohellohello
+str4 = str1 * 3      # Repetition
+print(str4)          # Output: hellohellohello
 
 list1 = [1, 2, 3]
 list2 = [4, 5]
 
-Print(list1 + list2) ; Output: [1, 2, 3, 4, 5]
+print(list1 + list2) # Output: [1, 2, 3, 4, 5]
 
 tuple1 = (1, 2)
 tuple2 = (3, 4)
 
-Print(tuple1 + tuple2) ; Output: (1, 2, 3, 4)
+print(tuple1 + tuple2) # Output: (1, 2, 3, 4)
 ```
 
 ## 2. ⚖ Comparison Operators
@@ -111,8 +111,8 @@ Print(tuple1 + tuple2) ; Output: (1, 2, 3, 4)
 a = 10
 b = 5
 
-Print(a == b) ; Output: false
-Print(a > b)  ; Output: true
+print(a == b) # Output: false
+print(a > b)  # Output: true
 ```
 
 ## 3. 🔁 Assignment Operators
@@ -130,11 +130,11 @@ Print(a > b)  ; Output: true
 ```
 x = 10
 x += 5
-Print(x) ; Output: 15
+print(x) # Output: 15
 
 y = 6
 y -= 3
-Print(y) ; Output: 3  
+print(y) # Output: 3  
 
 ```
 
@@ -148,19 +148,28 @@ Print(y) ; Output: 3
 
 - ! — Logical NOT (inverts Boolean value)
 
+or **you can also use them as text form**:
+
+- AND — Logical AND (true only if both are true)
+
+- OR — Logical OR (true if at least one is true)
+
+- NOT — Logical NOT (inverts Boolean value)
+
+  
 ✔ NISR Truthiness Rules
 
 Non-Boolean values behave as follows:
 
-- && returns the last truthy value
+- &&(AND) returns the last truthy value
 
-- || returns the first truthy value
+- ||(OR) returns the first truthy value
 
-- ! returns true for empty lists
+- !(NOT) returns true for empty lists
 
 ```
 x = []
-Print(!x) ; Output: true   ; empty list = false → inverted = true
+print(!x) # Output: true   # empty list = false → inverted = true
 ```
 
 ## 5. ⚙ Bitwise Operators
@@ -197,11 +206,11 @@ Print(!x) ; Output: true   ; empty list = false → inverted = true
 Bitwise AND (&)
 
 ```
-var1 = 3   ; 0011
-var2 = 2   ; 0010
+var1 = 3   # 0011
+var2 = 2   # 0010
 
 result = var1 & var2
-Print(result) ; Output: 2
+print(result) # Output: 2
 ```
 
 Bitwise OR (|)
@@ -211,7 +220,7 @@ var1 = 3
 var2 = 2
 
 result = var1 | var2
-Print(result) ; Output: 3
+print(result) # Output: 3
 ```
 
 Bitwise XOR (^)
@@ -221,7 +230,7 @@ var1 = 3
 var2 = 2
 
 result = var1 ^ var2
-Print(result) ; Output: 1
+print(result) # Output: 1
 ```
 
 Bitwise NOT (~)
@@ -230,7 +239,7 @@ Bitwise NOT (~)
 var1 = 2
 
 result = ~var1
-Print(result) ; Output: -3
+print(result) # Output: -3
 ```
 Left Shift (<<)
 
@@ -238,7 +247,7 @@ Left Shift (<<)
 var1 = 3
 
 result = var1 << 1
-Print(result) ; Output: 6
+print(result) # Output: 6
 ```
 
 Right Shift (>>)
@@ -247,7 +256,7 @@ Right Shift (>>)
 var1 = 6
 
 result = var1 >> 1
-Print(result) ; Output: 3
+print(result) # Output: 3
 ```
 
 
