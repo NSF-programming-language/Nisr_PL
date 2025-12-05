@@ -35,7 +35,7 @@ In **NISR**:
 **General Syntax**
 ```nisr
 fun function_name(parameters) {
-    ; Function logic
+    # Function logic
     return expression ; Optional
 }
 
@@ -46,12 +46,12 @@ Used when a function only performs an action (like printing to the console).
 
 ```
 fun display() {
-    Print("hello world")
+    print("hello world")
 }
 
-display() ; function calling
+display() # function calling
 
-; Output: hello world
+# Output: hello world
 ```
 ## 1.2 📥 Function with Parameter but No Return Value
 
@@ -59,12 +59,12 @@ Used when the function requires input to perform its task but does not produce a
 
 ```
 fun greet(name) {
-    Print("hello", name)
+    print("hello", name)
 }
 
 greet("Natan")
 
-; Output: hello Natan
+# Output: hello Natan
 ```
 
 ## 1.3 📤 Function with Return Value but No Parameters
@@ -76,9 +76,9 @@ fun get_value() {
     return 1000
 }
 
-Print(get_value())
+print(get_value())
 
-; Output: 1000
+# Output: 1000
 ```
 
 ## 1.4 🔄 Function with Parameter and Return Value
@@ -90,9 +90,9 @@ fun add(a, b) {
     return a + b
 }
 
-Print(add(600, 80))
+print(add(600, 80))
 
-; Output: 680
+# Output: 680
 ```
 
 ## 2. 🔑 Arguments in NISR Functions
@@ -107,10 +107,10 @@ fun multiply(a, b) {
     return a * b
 }
 
-result = multiply(100, 300) ; 100 goes to 'a', 300 goes to 'b'
-Print(result)
+result = multiply(100, 300) # 100 goes to 'a', 300 goes to 'b'
+print(result)
 
-; Output: 30000
+# Output: 30000
 ```
 ## 2.2 🎁 Default Arguments
 
@@ -121,8 +121,8 @@ fun power(x, y = 2) {
     return x ** y
 }
 
-Print(power(10))    ; y uses default 2 → Output: 100
-Print(power(10, 3)) ; y uses value 3 → Output: 1000
+print(power(10))    # y uses default 2 → Output: 100
+print(power(10, 3)) # y uses value 3 → Output: 1000
 ```
 
 ## 2.3 🏷 Keyword Arguments
@@ -133,9 +133,9 @@ fun div(x, y) {
     return x / y
 }
 
-Print(div(y = 2, x = 10)) ; Order is reversed, result is correct
+print(div(y = 2, x = 10)) # Order is reversed, result is correct
 
-; Output: 5
+# Output: 5
 ```
 
 ## 3. 🧩 Advanced Function Concepts
@@ -153,9 +153,9 @@ fun operate(fun_name, x, y) {
 
 result = operate(add, 10, 20)
 
-Print(result)
+print(result)
 
-; Output: 30
+# Output: 30
 
 ```
 - Useful for writing **calculators**, **callbacks**, or **reusing logic**.
@@ -167,14 +167,14 @@ A **nested function** is defined inside **another function**. It encapsulates **
 ```
 fun outer() {
     fun inner() {
-        Print("Inner function called")
+        print("Inner function called")
     }
     inner()
 }
 
-outer() ; Output: Inner function called
+outer() # Output: Inner function called
 
-; inner() is not accessible here
+# inner() is not accessible here
 ```
 ## 3.3 🔁 Recursion
 
@@ -190,7 +190,7 @@ fun factorial(n) {
     return n * factorial(n - 1)
 }
 
-Print(factorial(5)) ; Output: 120
+print(factorial(5)) # Output: 120
 ```
 
 
