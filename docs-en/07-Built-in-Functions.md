@@ -28,21 +28,21 @@ converting values between different data types.
 
 ### 🔹 Print()
 
-The `Print()` function displays values on the screen.
+The `print()` function displays values on the screen.
 
 **Syntax**
 ```nisr
-Print(object1, object2, ..., sep=" ", end="\n")
+print(object1, object2, ..., sep=" ", end="\n")
 ```
 
 Examples
 
 ```
-Print("Hello World")
-Print(1, 2, 3)
-Print(1, 2, 3, sep="*")
-Print("hello world", end="Nisr5.0")
-Print("hello world", end="\n")
+print("Hello World")
+print(1, 2, 3)
+print(1, 2, 3, sep="*")
+print("hello world", end="Nisr5.0")
+print("hello world", end="\n")
 ```
 ## 🔹 input()
 
@@ -61,8 +61,8 @@ Used to check how many items are inside a list, tuple, dictionary, or string.
 Example
 ```
 list1 = [1, 2, 3, 4, [6, 7, 8, 9]]
-Print(len(list1))      ; Output: 5
-Print(len(list1[4]))   ; Output: 4
+print(len(list1))      # Output: 5
+print(len(list1[4]))   # Output: 4
 ```
 
 ## 3. Type Conversion Functions
@@ -86,9 +86,9 @@ NISR provides built-in functions to convert between data types.
 Examples
 
 ```
-Print(int("42"))    ; Output: 42
-Print(int(3.99))    ; Output: 3
-Print(int(true))    ; Output: 1
+print(int("42"))    # Output: 42
+print(int(3.99))    # Output: 3
+print(int(true))    # Output: 1
 ```
 ## 🔹 float()
 
@@ -97,9 +97,9 @@ Print(int(true))    ; Output: 1
 Examples
 
 ```
-Print(float("3.14"))   ; Output: 3.14
-Print(float(10))       ; Output: 10.0
-Print(float(false))    ; Output: 0.0
+print(float("3.14"))   # Output: 3.14
+print(float(10))       # Output: 10.0
+print(float(false))    # Output: 0.0
 
 ```
 ## 🔹 string()
@@ -109,9 +109,9 @@ Print(float(false))    ; Output: 0.0
 Examples
 
 ```
-Print(string(42))      ; Output: "42"
-Print(string(3.14))    ; Output: "3.14"
-Print(string(true))    ; Output: "true"
+print(string(42))      # Output: "42"
+print(string(3.14))    # Output: "3.14"
+print(string(true))    # Output: "true"
 ```
 ## 🔹 list()
 
@@ -120,8 +120,8 @@ Print(string(true))    ; Output: "true"
 Examples
 
 ```
-Print(list("NISR"))    ; Output: ["N", "I", "S", "R"]
-Print(list((1, 2, 3))) ; Output: [1, 2, 3]
+print(list("NISR"))    # Output: ["N", "I", "S", "R"]
+print(list((1, 2, 3))) # Output: [1, 2, 3]
 ```
 ## 🔹 tuple()
 
@@ -129,8 +129,8 @@ Converts **strings** or **lists** into tuples.
 
 Examples
 ```
-Print(tuple([1, 2, 3])) ; Output: (1, 2, 3)
-Print(tuple("NISR"))    ; Output: ("N", "I", "S", "R")
+print(tuple([1, 2, 3])) # Output: (1, 2, 3)
+print(tuple("NISR"))    # Output: ("N", "I", "S", "R")
 ```
 
 ## ❌ Invalid Type Conversions
