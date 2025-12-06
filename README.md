@@ -34,6 +34,15 @@
 
 We're building a next-generation programming language designed to redefine software development. This language combines simplicity and readability and adds something new: **native multilingual support for developers around the world.**
 
+## How To Setup
+
+## VIDEO
+
+<p align="center">
+  <a href="https://youtu.be/Hf9pxYfJT9Q">
+    <img src="/assets/nisr.jpg" alt="Watch the video" />
+  </a>
+</p>
 
 
 
